@@ -29,5 +29,5 @@ npm test
 # 股票的资管系统
 
 ![股票的买入，卖出](https://github.com/wenmob/vue-position/blob/master/1.png)
-![资金持仓](https://github.com/wenmob/vue-position/blob/master/1.png)
+![资金持仓](https://github.com/wenmob/vue-position/blob/master/2.png)
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
