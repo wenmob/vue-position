@@ -1,0 +1,124 @@
+@import './transition.css';
+html,body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family:'微软雅黑', Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB,  Arial, sans-serif;
+  width: 100%;
+  height: 100%;
+  background-color: #EAF0FA;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+div:focus{
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.app-main{
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    
+}
+.pos-main{
+    width: 100%;
+    height: 100%;
+}
+.revoke-cont{
+       padding-top: 15px;
+       padding-left: 15px;
+       padding-right: 15px;
+       height: auto;
+  }
+  .revoke-main{
+    margin-left: 160px;
+    height: auto;
+  }
+  .el-table--border{
+    border:1px solid #ccc;
+  }
+  .el-table thead{
+    color: black;
+    font-weight: 100;
+  }
+  .el-table__body, .el-table__footer, .el-table__header{
+    border-collapse: collapse;
+  }
+  .el-table th{
+    background-color: #CED8EA;
+    font-weight: 500;
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+  .el-table td{
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+  .el-table td, .el-table th.is-leaf{
+    border-bottom: 1px solid #ccc;
+  }
+  .el-table--border td, .el-table--border th, .el-table__body-wrapper .el-table--border.is-scrolling-left~.el-table__fixed{
+    border-right: 1px solid #ccc;
+  }
+  .el-table--enable-row-hover .el-table__body tr:hover>td{
+    background-color: #CED6E5;
+  }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance:textfield;
+  }
+  input[type="number"]{
+    -moz-appearance: textfield;
+  }
+ 
+  /* .el-table--enable-row-transition .el-table__body td{
+    background-color: black;
+  } */
+@media screen and (max-height:580px) {
+    .app-main{
+       width: 100%;
+       height: 580px;
+       overflow-y: auto; 
+    }   
+}
+
+@media screen and (max-width:1400px) {
+    .app-main{
+       width: 1400px;
+       overflow-x: auto;
+    }   
+}
+
+#app .el-pagination{
+	padding:0 5px !important;
+}
